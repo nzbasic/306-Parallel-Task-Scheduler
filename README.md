@@ -1,15 +1,15 @@
 <h1 align="center">
 
-  ![Logo](https://media.discordapp.net/attachments/826599483126579282/872727060798394398/jacketing-logo4x.png)
+![Logo](https://media.discordapp.net/attachments/826599483126579282/872727060798394398/jacketing-logo4x.png)
 
-  Jacketing Studio Scheduler
+Jacketing Studio Scheduler
 
 </h1>
 
 <div align="center" class="row">
 
-  ![Coverage](/.github/badges/jacoco.svg?raw=true)
-  ![Java](https://img.shields.io/badge/Java-1.8-green)
+![Coverage](/.github/badges/jacoco.svg?raw=true)
+![Java](https://img.shields.io/badge/Java-1.8-green)
 
 </div>
 
@@ -17,12 +17,11 @@
 
 Jacketing Studio Scheduler is a multi-platform, parallelized task scheduler with a feature-rich search visualization tool. The program takes an weighted directed acyclic graph as input via a .dot file and finds the optimal schedule for the tasks across the set number of processors. The aim is to help large data centers efficiently schedule any task graph on any number of their computers/processors.
 
- 
+
 <h4>Features:</h4>
 
-- Multi-threaded task scheduler
-- Single-threaded option
-- Visualization of search with diagnostic graphs (RAM, CPU)
+- Single or Multi-threaded task scheduler
+- Visualization of search with diagnostic graphs (RAM, CPU, Search Space, Best Schedules)
 
 <h3>Team</h3>
 
@@ -36,7 +35,11 @@ Jacketing Studio Scheduler is a multi-platform, parallelized task scheduler with
 
 <h3>Screenshots</h3>
 
+![image](https://user-images.githubusercontent.com/54062686/130344784-80f0228f-0160-43ab-ba3a-5dc9250ab622.png)
+
 <h3>Usage</h3>
+
+Must be run using Java 11 (OpenJDK is fine)
 
 To run the program, type `java -jar scheduler.jar <Input File.dot> <Number of Processors> [OPTIONS]`
 
@@ -53,14 +56,10 @@ Optional:
 
 <h3>Project Setup</h3>
 
-Building locally requires Oracle Java 8
+Building locally requires Java 11
 
 1. Clone Repo
-2. In IntelliJ:
-   - Set Project SDK to Java 8 (if you have multiple Java installations)
-   - Set Gradle SDK to Java 8 (if you have multiple Java installations)
-   - Sync Gradle
-3. Run com.jacketing.Entry
+2. In IntelliJ: Run com.jacketing.Entry (make sure to configure entry to use the correct args as above)
 
 <h3>Wiki</h3>
 
